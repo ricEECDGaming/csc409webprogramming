@@ -1,0 +1,560 @@
+/* Anything declared here can be accessed by anything in this document */
+:root {
+  /* Defining Custom Variables */
+
+  --mybackgroundcolor: #b4a4e5;
+  --topicboxcolor: #4b407b;
+
+  --fontsizeheadertext: 30px;
+  --fontsizebodytext: 20px;
+  --fontsizefootertext: 16px;
+  --spacingamt: 1em;
+  --borderradius: 25px;
+  --textcolor: #ffffff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--mybackgroundcolor); /* this is how we put a custom var in stuff */
+  background-image: url("images/vortex2024graphic_gradient.png"); /* Note to self: figure out how to draw the gradient through CODE rather than doing it manually. */
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif; /* sets default font */
+}
+
+/* Define main Grid. */
+.grid-container {
+  display: grid;
+  /* grid-template: 150px / auto auto auto auto auto auto auto auto auto; */
+
+  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(12, 1fr);
+
+  row-gap: 50px;
+  column-gap: var(--spacingamt);
+  max-width: 1280px;
+
+  align-items: center;
+  margin: auto;
+
+  background-color: transparent;
+}
+
+@media screen and (max-width: 850px) {
+
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* bunch of header stuff */
+
+header {
+  grid-row: 1;
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+
+  background-color: var(--topicboxcolor);
+  border-radius: var(--borderradius);
+}
+
+.header_title {
+  color: var(--textcolor);
+  justify-content: flex-start;
+}
+
+.header_logo{
+  width: 150px;
+  height: 150px;
+
+  max-height: 125px;
+  min-height: 125px;
+  max-width: 125px;
+  min-width: 125px;
+}
+
+#navigation_menu {
+  background-color: white;
+  border-radius: var(--borderradius);
+}
+
+/* need to do this */
+main {
+  grid-row: 2;
+  grid-column: 1 / -1;
+}
+
+/* setting up important */
+.topic {
+  grid-column: 2 / -2;
+
+  /* puts some space inbetween topics so things arent super cramped */
+  margin-bottom: 2rem;
+}
+
+/* ==================================================================== */
+                            /* Body Topic 1 */
+#bodytopic1 {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  background-color: var(--topicboxcolor);
+  padding: var(--spacingamt);
+  border-radius: var(--borderradius);
+
+  min-width: 0;
+}
+
+/* Header for Body Topic 1*/
+h2.topic1Title {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  
+  justify-self: center;
+  text-align: center;
+  color: var(--textcolor);
+  font-size: var(--fontsizeheadertext);
+}
+
+/* Image for Body Topic 1*/
+img.workshopAnnouncementImg {
+  width: 100%;
+  height: auto;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+/* Main Text for Body Topic 1*/
+p.topic1MainText {
+  grid-row: 2;
+  grid-column: 2;
+
+  font-size: var(--fontsizebodytext);
+  color: var(--textcolor);
+  margin: var(--spacingamt);
+}
+
+/* Image Caption for Body Topic 1*/
+figcaption.topic1ImgCaption {
+  grid-row: 2;
+
+  font-size: var(--fontsizefootertext);
+  color: var(--textcolor);
+  margin: var(--spacingamt);
+}
+
+/* media encoding for smaller windows */
+@media screen and (max-width: 850px) {
+  #bodytopic1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  p.topic1MainText {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  img.workshopAnnouncementImg {
+    width: 100%;
+    height: auto;
+    grid-row: 3;
+    grid-column: 1;
+  }
+}
+
+/* ==================================================================== */
+
+/* ==================================================================== */
+                            /* Body Topic 2 */
+#bodytopic2 {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  background-color: var(--topicboxcolor);
+  padding: var(--spacingamt);
+  border-radius: var(--borderradius);
+
+  min-width: 0;
+}
+
+/* Header for Body Topic 2*/
+h2.topic2Title {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  
+  justify-self: center;
+  text-align: center;
+  color: var(--textcolor);
+  font-size: var(--fontsizeheadertext);
+}
+
+/* Image for Body Topic 2*/
+img.steamFrontPageImg {
+  width: 100%;
+  height: auto;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+/* Main Text for Body Topic 2*/
+p.topic2MainText {
+  grid-row: 2;
+  grid-column: 1;
+
+  font-size: var(--fontsizebodytext);
+  color: var(--textcolor);
+  margin: var(--spacingamt);
+}
+
+/* Image Caption for Body Topic 2*/
+figcaption.topic2ImgCaption {
+  grid-row: 2;
+
+  font-size: var(--fontsizefootertext);
+  color: var(--textcolor);
+  margin: var(--spacingamt);
+}
+
+/* media encoding for smaller windows */
+@media screen and (max-width: 850px) {
+  #bodytopic2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  p.topic2MainText {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  img.steamFrontPageImg {
+    width: 100%;
+    height: auto;
+    grid-row: 3;
+    grid-column: 1;
+  }
+}
+
+/* ==================================================================== */
+
+/* ==================================================================== */
+                            /* Body Topic 3 */
+#bodytopic3 {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 1rem;
+  background-color: var(--topicboxcolor);
+  padding: var(--spacingamt);
+  border-radius: var(--borderradius);
+
+  min-width: 0;
+}
+
+/* Header for Body Topic 3*/
+h2.topic3Title {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  
+  justify-self: center;
+  text-align: center;
+  color: var(--textcolor);
+  font-size: var(--fontsizeheadertext);
+}
+
+/* Main Text for Body Topic 3*/
+p.topic3MainText {
+  grid-row: 2;
+  grid-column: 1/-1;
+
+  font-size: var(--fontsizebodytext);
+  color: var(--textcolor);
+  margin: var(--spacingamt);
+}
+
+/* Images for Body Topic 3*/
+img.workshopBracketImg {
+  width: 100%;
+  height: auto;
+  grid-row: 3;
+  grid-column: 1;
+
+  max-width: 100%;
+  height: auto;
+}
+img.workshopVortexGalleryImg {
+  width: 100%;
+  height: auto;
+  grid-row: 3;
+  grid-column: 2;
+
+  max-width: 100%;
+  height: auto;
+}
+img.workshopDiscordImg {
+  width: 100%;
+  height: auto;
+  grid-row: 3;
+  grid-column: 3;
+
+  max-width: 100%;
+  height: auto;
+}
+
+/* Image Captions for Body Topic 3*/
+figcaption.topic3ImgCaption1,
+figcaption.topic3ImgCaption2,
+figcaption.topic3ImgCaption3 {
+  grid-row: 3;
+
+  font-size: var(--fontsizefootertext);
+  color: var(--textcolor);
+  margin: var(--spacingamt);
+}
+
+/* media encoding for smaller windows */
+@media screen and (max-width: 850px) {
+  #bodytopic3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  p.topic3MainText {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+
+  /* Image for Body Topic 3*/
+  img.workshopBracketImg {
+    width: 100%;
+    height: auto;
+    grid-row: 3;
+    grid-column: 1;
+  }
+  img.workshopVortexGalleryImg {
+    width: 100%;
+    height: auto;
+    grid-row: 4;
+    grid-column: 1;
+  }
+  img.workshopDiscordImg {
+    width: 100%;
+    height: auto;
+    grid-row: 5;
+    grid-column: 1;
+  }
+}
+
+/* ==================================================================== */
+
+/* ==================================================================== */
+                            /* Body Topic 4 */
+#bodytopic4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  gap: 1rem;
+  background-color: var(--topicboxcolor);
+  padding: var(--spacingamt);
+  border-radius: var(--borderradius);
+
+  min-width: 0;
+}
+
+/* Header for Body Topic 4*/
+h2.topic4Title {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  
+  justify-self: center;
+  text-align: center;
+  color: var(--textcolor);
+  font-size: var(--fontsizeheadertext);
+}
+
+/* Main Text for Body Topic 4*/
+p.topic4MainText {
+  grid-row: 2;
+  grid-column: 1/-1;
+
+  font-size: var(--fontsizebodytext);
+  color: var(--textcolor);
+  margin: var(--spacingamt);
+  text-align: center;
+}
+
+/* setting up video defaults for this section */
+.video {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+}
+
+.topic4VideoFigure1{
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+
+.topic4VideoFigure2{
+  grid-row: 3;
+  grid-column: 3 / span 2;
+}
+
+.topic4VideoFigure3{
+  grid-row: 5;
+  grid-column: 1 / span 2;
+}
+
+.topic4VideoFigure4{
+  grid-row: 5;
+  grid-column: 3 / span 2;
+}
+
+/* Image Captions for Body Topic 4*/
+figcaption.topic4Vid1Caption,
+figcaption.topic4Vid2Caption,
+figcaption.topic4Vid3Caption,
+figcaption.topic4Vid4Caption {
+  font-size: var(--fontsizefootertext);
+  color: var(--textcolor);
+  margin: var(--spacingamt);
+  word-wrap: normal;
+}
+
+/* media encoding for smaller windows */
+@media screen and (max-width: 850px) {
+  #bodytopic4 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+
+  /* Header for Body Topic 4*/
+  h2.topic4Title {
+    grid-row: 1;
+    grid-column: 1/-1;
+    
+    justify-self: center;
+    text-align: center;
+    color: var(--textcolor);
+    font-size: var(--fontsizeheadertext);
+  }
+  
+  p.topic4MainText {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+
+  .topic4VideoFigure1{
+    grid-row: 3;
+    grid-column: 1 / -1;
+  }
+  .topic4VideoFigure2{
+    grid-row: 4;
+    grid-column: 1 / -1;
+  }
+  .topic4VideoFigure3{
+    grid-row: 5;
+    grid-column: 1 / -1;
+  }
+  .topic4VideoFigure4{
+    grid-row: 6;
+    grid-column: 1 / -1;
+  }
+}
+
+/* ==================================================================== */
+
+/* ==================================================================== */
+                            /* Socials */
+#bodysocials {  
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 1rem;
+  background-color: var(--topicboxcolor);
+  padding: var(--spacingamt);
+  border-radius: var(--borderradius);
+
+  min-width: 0;
+}
+
+/* Header for Body Topic 4*/
+h2.socialsTitle {
+  justify-content: flex-start;
+  justify-self: center;
+  text-align: center;
+  align-items: flex-start;
+  color: var(--textcolor);
+  font-size: var(--fontsizeheadertext);
+  margin-bottom: 20px;
+}
+
+#social_row {
+  display: flex;
+  gap: 30px;
+}
+
+.socialimagelink {
+  width: 60%;
+  height: auto;
+
+  justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+
+  #bodysocials {
+    grid-column: 3 / -3;
+    max-width: 40%;
+    margin: 0 auto;
+    
+  }
+
+  #social_row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+/* ==================================================================== */
+
+/* ==================================================================== */
+                          /* Other Stuff */
+
+footer.endingFooter {
+  color: var(--textcolor);
+
+  background-color: #4b407b;
+  border-radius: var(--borderradius);
+  
+  padding: var(--spacingamt);
+
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
