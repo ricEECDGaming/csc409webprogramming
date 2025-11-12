@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- define adding a css file -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- define adding a viewport to allow for scaling stuff -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- define adding a javascript file -->
+        <script src="js/content.js"></script>
+
+        <title>
+            Rivals of Aether Steam Workshop Community
+        </title>
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <header id="header" class="header">
+                <img class="header_logo" src="images/roa_small_logo.png" alt="RoA_Main_Logo">
+
+                <!-- Top Level Header. test test -->
+                <h1 class="header_title">
+                    Rivals of Aether: Steam Workshop
+                </h1>
+
+                <!-- Navigation "Menu" -->
+                <nav class="top_navbar">
+                    <!-- unordered list -->
+                    <ul id="navigation_menu">
+                        <li class="navigation_menu__item">
+                            <a href="https://rivalsofaether.com/">
+                                Link to Official Rivals
+                            </a>
+                        </li>
+                        <li class="navigation_menu__item">
+                            <a href="https://rivalsofaether.com/workshop/">
+                                Link to Official Rivals Workshop Page
+                            </a>
+                        </li>
+                        <li class="navigation_menu__item">
+                            <a href="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="navigation_menu__item">
+                            <a href="#bodytopic1">
+                                What is RoA Steam Workshop?
+                            </a>
+                        </li>
+                        <li class="navigation_menu__item">
+                            <a href="#bodytopic3">
+                                Community
+                            </a>
+                        </li>
+                        <li class="navigation_menu__item">
+                            <a href="#bodysocials">
+                                Socials
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main id="main" class="main">
+                <!-- Body Topic 1 - Intro to what is Rivals Workshop -->
+                <section id="bodytopic1" class="topic">
+
+                    <h2 class="topic1Title">An Additional Community-Driven Feature in critically acclaimed indie game Rivals of Aether</h2>
+
+                    <p class="topic1MainText">A fan-favorite feature of the critically acclaimed indie platform fighting game Rivals of Aether is the integration of the Steam Workshop, allowing for community members to create their own custom characters, stages, character skins and buddies for anyone to use! Announced a few years after the game's launch, this side addition has proven to be one of the most well-known and discussed parts of the original Rivals of Aether and has garnered a very active following and dedicated community.</p>
+                    
+                    <!-- i adjusted everything into a figure class just so its more organized and i can do the image caption without needing to make a footer class -->
+                    <figure class="workshopAnnouncementImg">
+                        <a href="https://rivalsofaether.com/workshop/">
+                            <img class="workshopAnnouncementImg"src="images/SteamWorkshopAvailableAnnouncement.png" alt="image of rivals workshop announcement in 2019">
+                        </a>
+
+                        <!-- Caption / Footer -->
+                         <figcaption class="topic1ImgCaption">
+                            A promotional image for advertising the Steam Workshop capabilities of Rivals of Aether when it initially launched in 2019.
+                         </figcaption>
+                    </figure>
+
+                </section>
+
+                <!-- Body Topic 2 - General overview of what custom content is -->
+                <section id="bodytopic2" class="topic">
+
+                    <h2 class="topic2Title">Custom Creativity Abound</h2>
+
+                    <p class="topic2MainText">Compared to other games which have similar custom content related things, the barrier to entry is very low and easily accessible with various pixel art tools and a relatively simple-to-understand programming language, allowing for anyone of almost any skill level to be able to create and share something. Over 4000 characters (at the time of writing this) have been made available as addons, in addition to a ton of other custom stages and game modes entirely!</p>
+
+                    <!--  -->
+                    <figure class="steamFrontPageImg">
+                        <a href="https://steamcommunity.com/app/383980/workshop/">
+                            <img class="steamFrontPageImg"src="images/roa_ws_steam_front_page.png" alt="steam ws front page">
+                        </a>
+
+                        <!-- Caption / Footer -->
+                         <figcaption class="topic2ImgCaption">
+                            A screenshot of the front page for the Steam Workshop, which displays the most popular mods uploaded of the current week.
+                         </figcaption>
+                    </figure>
+
+                </section>
+
+                <!-- Body Topic 3 - Spotlighting some major community things -->
+                <section id="bodytopic3" class="topic">
+
+                    <h2 class="topic3Title">An Ongoing Community Effort</h2>
+                    
+                    <p class="topic3MainText">
+                        The Rivals of Aether Steam Workshop community has made a conscious effort to keep the scene alive through the efforts of various community events and presentations, in-person and online tournament series, and a gigantic community hub which has cultivated a strong ongoing community for the past few years and with more to come.
+                        Some very notable examples include:
+                    </p>
+
+                    <!--  -->
+                    <figure class="workshopBracketImg">
+                        <a href="https://www.youtube.com/watch?v=g6AyHFgym9A">
+                            <img class="workshopBracketImg"src="images/roa_ws_riptide_bracket.png" alt="RoAWS Riptide 2024 Bracket Set">
+                        </a>
+
+                        <!-- Caption / Footer -->
+                         <figcaption class="topic3ImgCaption1">
+                            A screenshot of the tournament 'Riptide', which took place in September 2024 in Sandusky Ohio, displaying the grand finals match of the Rivals Workshop side bracket - this tournament featured a large amount of community made characters.
+                         </figcaption>
+                    </figure>
+
+                    <!--  -->
+                    <figure class="workshopVortexGalleryImg">
+                        <a href="https://www.youtube.com/watch?v=L90N-Gtjma0">
+                            <img class="workshopVortexGalleryImg"src="images/vortex2024graphic.png" alt="RoAWS Vortex Gallery 2024 Roster Graphic">
+                        </a>
+
+                        <!-- Caption / Footer -->
+                         <figcaption class="topic3ImgCaption2">
+                            A roster graphic for the 'Vortex Gallery 2024' Rivals of Aether Workshop online tournament in November 2024. As of the time of writing this, this was the biggest workshop bracket in terms of unique entrants to date.   
+                        </figcaption>
+                    </figure>
+
+                    <!--  -->
+                    <figure class="workshopDiscordImg">
+                        <a href="https://discord.gg/rp6Ce66mGc">
+                            <img class="workshopDiscordImg"src="images/roa_ws_discord_banner.png"alt="RoAWS Extended Workshop Discord Server">
+                        </a>
+
+                        <!-- Caption / Footer -->
+                         <figcaption class="topic3ImgCaption3">
+                            A screenshot of the 'Rivals of Aether Extended Workshop' Discord server, which serves as the primary community hub for the online Rivals of Aether Workshop scene. It was founded in October 2019 and as of the time of writing this, has over 7000 members. 
+                        </figcaption>
+                    </figure>
+
+                </section>
+
+                <!-- Body Topic 4 - showcasing some videos relating to Rivals Workshop (some of which are from Yours Truly (aka me)) -->
+                <section id="bodytopic4" class="topic">
+
+                    <h2 class="topic4Title">Content Focus</h2>
+                    
+                    <p class="topic4MainText">
+                        Some examples of recent video works about the Rivals of Aether Steam Workshop:
+                    </p>
+
+                    <!-- video 1 -->
+                    <figure class="topic4VideoFigure1">
+                        <iframe id="video1" class="video"
+                                src="https://www.youtube.com/embed/khWwt3YEyaA"
+                                title="Rivals of Aether Workshop Releases - August 2025"
+                                allowfullscreen>
+                        </iframe>
+                        <figcaption class="topic4Vid1Caption">
+                            Video showcasing all the recent notable releases in August 2025 on the Rivals of Aether Steam Workshop.
+                        </figcaption>
+                    </figure>
+
+                    <!-- video 2 -->
+                    <figure class="topic4VideoFigure2">
+                        <iframe id="video2" class="video"
+                                src="https://www.youtube.com/embed/r6-omgmUkEM"
+                                title="Rivals Workshop at Vortex Gallery 2025"
+                                allowfullscreen>
+                        </iframe>
+                        <figcaption class="topic4Vid2Caption">
+                            Video showcasing the character roster for the Rivals of Aether Workshop 'Vortex Gallery 2025 Online' tournament hosted in September 2025.
+                        </figcaption>
+                    </figure>
+
+                    <!-- video 3 -->
+                    <figure class="topic4VideoFigure3">
+                        <iframe id="video3" class="video"
+                                src="https://www.youtube.com/embed/bFtQ39J4y0o"
+                                title="Soma Cruz Trailer - Rivals of Aether Workshop"
+                                allowfullscreen>
+                        </iframe>
+                        <figcaption class="topic4Vid3Caption">
+                           Character trailer video for "Soma Cruz" from Castlevania: Aria of Sorrow. Created as a collaboration between ricE_ECD and VVizard.
+                        </figcaption>
+                    </figure>
+
+                    <!-- video 4 -->
+                    <figure class="topic4VideoFigure4">
+                        <iframe id="video4" class="video"
+                                src="https://www.youtube.com/embed/vfHW3oPYYV4"
+                                title="RoA (from mario) Jam RESULTS!"
+                                allowfullscreen>
+                        </iframe>
+                        <figcaption class="topic4Vid4Caption">
+                            Video detailing the results of the 'from mario' Jam (event where developers create a character in under a month) results from April 2025.
+                        </figcaption>
+                    </figure>
+
+                </section>
+
+                <!-- Socials - For linking to social medias, such as Twitter and Discord. -->
+                <section id="bodysocials" class="topic">
+
+                    <h2 class="socialsTitle">Social Links</h2>
+
+                    <!-- this is much easier to organize. -->
+                    <section id="social_row">
+                        <a href="https://www.youtube.com/@ROAWC">
+                            <img class="socialimagelink socials_images"src="images/icon_youtube.png" alt="youtube">
+                        </a>
+                        <a href="https://x.com/extendedroa?s=21">
+                            <img class="socialimagelink socials_images"src="images/icon_twitter.png" alt="twitter dot com">
+                        </a>
+                        <a href="https://bsky.app/profile/extendedworkshop.bsky.social">
+                            <img class="socialimagelink socials_images"src="images/icon_bluesky.png" alt="bluesky">
+                        </a>
+                        <a href="https://discord.gg/rp6Ce66mGc">
+                            <img class="socialimagelink socials_images"src="images/icon_discord.png" alt="discord">
+                        </a>
+                    </section>
+
+                </section>
+
+            </main>
+
+
+
+            <template id="topic-single-section-template">
+                
+                <section id="" class="topic">
+
+                    <h2 class="header"></h2>
+
+                    <p class="paragraph">
+                             
+                    </p>
+                    
+                    <figure class="figure">
+                        <a href="" class="hyperlink">
+                            <img class="image"src=""alt="">
+                        </a>
+
+                        <!-- Caption / Footer -->
+                         <figcaption class="figurecaption">
+                            
+                         </figcaption>
+                    </figure>
+
+                </section>
+
+            </template>
+
+            <!-- Footer - As a general disclaimer. -->
+            <footer class="endingFooter">
+                Note: This website is unofficial and is not officially affiliated with Aether Studios (developers of the original game) or Dan Fornace (lead developer of the original game). Certain characters or properties shown are not comercially available or belong to other IP holders. This website serves as an advertisement for the community and the things it has done. No copyright infringement intended. All rights reserved.
+            </footer>
+        </div>
+
+
+        <script>
+            // get section template
+            const sectionTemplate = document.getElementById("section-template");
+        
+
+            /*
+            // example of adding something using the DOM (i think?)
+            const menuElement = document.getElementById("navigation_menu");
+            console.log(menuElement);
+
+            const menuItemsHTMLCollection = menuElement.getElementsByClassName("navigation_menu__item");
+            console.log(menuItemsHTMLCollection);
+            
+            const menuItemsNodeList = menuElement.querySelectorAll(".navigation_menu__item");
+            console.log(menuItemsNodeList);
+
+            
+
+            console.log(`there are ${menuItemsHTMLCollection.length}`);
+
+
+            for (let i = 0; i < menuItemsNodeList.length; i+=1){
+                console.log(menuItemsNodeList[i]);
+            }
+
+            // template for inserting stuff
+            const fragment = new DocumentFragment();
+
+            for (let i = 0; i < 5; i+=1){
+                const liElement = document.createElement("li");
+                liElement.classList.add("navigation_menu__item");
+                liElement.textContent = i;
+                fragment.appendChild(liElement);    // more efficient way to do this
+            }
+            
+            menuElement.appendChild(fragment);
+            */
+        </script>
+
+    </body>
+
+</html>
